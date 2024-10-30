@@ -1,0 +1,15 @@
+services:
+  uno:
+    image: servicio01
+    build: ./servicio01/
+    ports:
+      - "80:80"
+  dos:
+    image: servicio02
+    build: ./servicio02/
+    ports:
+      - "5555:5555"
+  tres:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
